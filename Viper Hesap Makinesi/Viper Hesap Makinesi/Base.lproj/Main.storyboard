@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Viper_Hesap_Makinesi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AwZ-VQ-olG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sonuç : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlV-B4-6kL">
+                                <rect key="frame" x="32" y="97" width="326" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ptw-X8-JPe">
+                                <rect key="frame" x="32" y="183" width="326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U4S-jI-kTb">
+                                <rect key="frame" x="32" y="267" width="326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh7-lr-j9G">
+                                <rect key="frame" x="130" y="351" width="130" height="34.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TOPLAM"/>
+                                <connections>
+                                    <action selector="buttonToplam:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNw-62-uoa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEG-j5-Iq6">
+                                <rect key="frame" x="130" y="480.66666666666669" width="130" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ÇARPIM"/>
+                                <connections>
+                                    <action selector="buttonCarpma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ccz-eT-KFX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGU-rd-o3A">
+                                <rect key="frame" x="130" y="415.66666666666669" width="130" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="FARK"/>
+                                <connections>
+                                    <action selector="buttonFark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jjw-9f-c5G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngd-YO-tNE">
+                                <rect key="frame" x="130" y="545" width="130" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="BOLUM"/>
+                                <connections>
+                                    <action selector="buttonBolum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQq-ic-fbb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECV-Np-Ja1">
+                                <rect key="frame" x="130" y="610" width="130" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="MOD"/>
+                                <connections>
+                                    <action selector="buttonModAlma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUV-y7-jLm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tLT-jn-CCb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U4S-jI-kTb" firstAttribute="leading" secondItem="tLT-jn-CCb" secondAttribute="leading" constant="32" id="0qk-id-4MO"/>
+                            <constraint firstItem="ECV-Np-Ja1" firstAttribute="top" secondItem="Ngd-YO-tNE" secondAttribute="bottom" constant="30" id="2mM-35-YKO"/>
+                            <constraint firstItem="LlV-B4-6kL" firstAttribute="leading" secondItem="tLT-jn-CCb" secondAttribute="leading" constant="32" id="7Mh-B7-7Lt"/>
+                            <constraint firstItem="cEG-j5-Iq6" firstAttribute="top" secondItem="xGU-rd-o3A" secondAttribute="bottom" constant="30" id="7Vh-if-AWH"/>
+                            <constraint firstItem="tLT-jn-CCb" firstAttribute="trailing" secondItem="ptw-X8-JPe" secondAttribute="trailing" constant="32" id="882-OQ-hdA"/>
+                            <constraint firstItem="tLT-jn-CCb" firstAttribute="trailing" secondItem="ECV-Np-Ja1" secondAttribute="trailing" constant="130" id="EZe-Sq-63Z"/>
+                            <constraint firstItem="tLT-jn-CCb" firstAttribute="trailing" secondItem="Ngd-YO-tNE" secondAttribute="trailing" constant="130" id="GbB-dV-k46"/>
+                            <constraint firstItem="tLT-jn-CCb" firstAttribute="trailing" secondItem="xGU-rd-o3A" secondAttribute="trailing" constant="130" id="Gd2-fL-I5y"/>
+                            <constraint firstItem="LlV-B4-6kL" firstAttribute="top" secondItem="tLT-jn-CCb" secondAttribute="top" constant="50" id="Hnk-6p-VFG"/>
+                            <constraint firstItem="tLT-jn-CCb" firstAttribute="trailing" secondItem="LlV-B4-6kL" secondAttribute="trailing" constant="32" id="IAu-dM-5Tf"/>
+                            <constraint firstItem="Ngd-YO-tNE" firstAttribute="top" secondItem="cEG-j5-Iq6" secondAttribute="bottom" constant="30" id="PHx-3o-GKc"/>
+                            <constraint firstItem="tLT-jn-CCb" firstAttribute="trailing" secondItem="U4S-jI-kTb" secondAttribute="trailing" constant="32" id="Pnx-LZ-cxv"/>
+                            <constraint firstItem="ptw-X8-JPe" firstAttribute="leading" secondItem="tLT-jn-CCb" secondAttribute="leading" constant="32" id="WZI-ZE-YCJ"/>
+                            <constraint firstItem="ECV-Np-Ja1" firstAttribute="leading" secondItem="tLT-jn-CCb" secondAttribute="leading" constant="130" id="ZO2-uA-GcH"/>
+                            <constraint firstItem="Ngd-YO-tNE" firstAttribute="leading" secondItem="tLT-jn-CCb" secondAttribute="leading" constant="130" id="Zk8-8E-sRD"/>
+                            <constraint firstItem="bh7-lr-j9G" firstAttribute="leading" secondItem="tLT-jn-CCb" secondAttribute="leading" constant="130" id="af3-IK-fEo"/>
+                            <constraint firstItem="bh7-lr-j9G" firstAttribute="top" secondItem="U4S-jI-kTb" secondAttribute="bottom" constant="50" id="e50-ce-QcH"/>
+                            <constraint firstItem="tLT-jn-CCb" firstAttribute="trailing" secondItem="bh7-lr-j9G" secondAttribute="trailing" constant="130" id="fhV-uC-xUa"/>
+                            <constraint firstItem="U4S-jI-kTb" firstAttribute="top" secondItem="ptw-X8-JPe" secondAttribute="bottom" constant="50" id="fwa-16-Jv3"/>
+                            <constraint firstItem="xGU-rd-o3A" firstAttribute="leading" secondItem="tLT-jn-CCb" secondAttribute="leading" constant="130" id="jHt-lp-Bkb"/>
+                            <constraint firstItem="xGU-rd-o3A" firstAttribute="top" secondItem="bh7-lr-j9G" secondAttribute="bottom" constant="30" id="lku-L4-i2Q"/>
+                            <constraint firstItem="ptw-X8-JPe" firstAttribute="top" secondItem="LlV-B4-6kL" secondAttribute="bottom" constant="50" id="plT-fp-zVT"/>
+                            <constraint firstItem="cEG-j5-Iq6" firstAttribute="leading" secondItem="tLT-jn-CCb" secondAttribute="leading" constant="130" id="rIF-AF-JLy"/>
+                            <constraint firstItem="tLT-jn-CCb" firstAttribute="trailing" secondItem="cEG-j5-Iq6" secondAttribute="trailing" constant="130" id="s4k-Ec-sNx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelSonuc" destination="LlV-B4-6kL" id="udo-dr-UCb"/>
+                        <outlet property="textFieldSayi1" destination="ptw-X8-JPe" id="UTG-XV-16l"/>
+                        <outlet property="textFieldSayi2" destination="U4S-jI-kTb" id="ZbT-Qw-g7a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
